@@ -10,10 +10,9 @@ fun String.capitalize(): String {
         return this
     }
 
-    val head = this.toCharArray()[0].toString()
-    return head.toUpperCase() + this.substring(1)
+    return this[0].toUpperCase() + this.substring(1)
 }
 
 fun String.spaceToCamelCase(): String {
-    return this.split(" ").map{it.capitalize()}.joinToString("")
+    return this.split(" ").map { it.capitalize() }.joinToString("")
 }
